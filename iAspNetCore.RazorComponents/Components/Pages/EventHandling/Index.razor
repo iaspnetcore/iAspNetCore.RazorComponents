@@ -1,0 +1,41 @@
+﻿@page "/EventHandling/index"
+
+<h1>EventHandling</h1>
+
+<h1>Mouse pointer location</h1>
+
+<p>Mouse coordinates (X, Y): @clientX, @clientY</p>
+
+<!--Without arguments-->
+<button class="btn btn-primary" onclick="@ShowMouseLocation">Without event argument</button>
+
+<!--Lambda expression with one argument-->
+<button class="btn btn-primary ml-5" onclick="@(e => ShowMouseLocation(e))">With event argument</button>
+
+
+<h1>Mouse move in and move out</h1>
+<h1 class="display-1" onmouseover="@OnMouseOver" onmouseout="@OnMouseOut">@inOrOut</h1>
+
+@functions {
+    long clientX = 0;
+    long clientY = 0;
+
+    void ShowMouseLocation(UIMouseEventArgs eventArgs)
+    {
+        clientX = eventArgs.ClientX;
+        clientY = eventArgs.ClientY;
+    }
+
+
+     string inOrOut = "OUT";
+
+    void OnMouseOver()
+    {
+        inOrOut = "IN!";
+    }
+
+    void OnMouseOut()
+    {
+        inOrOut = "OUT";
+    }
+}
