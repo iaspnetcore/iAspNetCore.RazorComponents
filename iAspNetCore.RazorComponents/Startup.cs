@@ -21,7 +21,7 @@ namespace iAspNetCore.RazorComponents
             services.AddMvc()
                 .AddNewtonsoftJson();
 
-            services.AddRazorComponents();
+            services.AddRazorComponents();//
 
             services.AddSingleton<WeatherForecastService>();
         }
