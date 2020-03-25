@@ -9,6 +9,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "libraries", "libraries", "{
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "iAspNetCore.RazorComponents", "src\libraries\iAspNetCore.RazorComponents\iAspNetCore.RazorComponents.csproj", "{210F78C3-DD16-4CD8-B7AF-F02FBDF38250}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorServer", "src\demo\BlazorServer\BlazorServer.csproj", "{4AB0ACB8-700F-431A-B044-1D5DEAB8AB45}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C688C3BE-B225-4496-83EB-C05310BCF987}"
+	ProjectSection(SolutionItems) = preProject
+		README.txt = README.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,12 +26,17 @@ Global
 		{210F78C3-DD16-4CD8-B7AF-F02FBDF38250}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{210F78C3-DD16-4CD8-B7AF-F02FBDF38250}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{210F78C3-DD16-4CD8-B7AF-F02FBDF38250}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AB0ACB8-700F-431A-B044-1D5DEAB8AB45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AB0ACB8-700F-431A-B044-1D5DEAB8AB45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AB0ACB8-700F-431A-B044-1D5DEAB8AB45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AB0ACB8-700F-431A-B044-1D5DEAB8AB45}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{210F78C3-DD16-4CD8-B7AF-F02FBDF38250} = {DBDE947C-06D8-4B67-BD50-FD58B6A445C0}
+		{4AB0ACB8-700F-431A-B044-1D5DEAB8AB45} = {79CE80CB-70C9-428B-9223-34553830DC5B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {859D9A0E-9C94-49F6-B209-A5FE8674BD3C}
