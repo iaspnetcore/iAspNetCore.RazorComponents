@@ -1,7 +1,23 @@
 ﻿@page "/fetchdata"
 
+@using iAspNetCore.RazorComponents
+
 @using BlazorServer.Data
 @inject WeatherForecastService ForecastService
+
+<h1>Table  Component Demo</h1>
+
+<Table Items="forecasts">
+    <TableHeader>
+        <th>ID</th>
+        <th>Name</th>
+    </TableHeader>
+    <RowTemplate>
+        <td>@context.Date.ToShortDateString()</td>
+        <td>@context.TemperatureC</td>
+    </RowTemplate>
+</Table>
+
 
 <h1>Weather forecast</h1>
 
