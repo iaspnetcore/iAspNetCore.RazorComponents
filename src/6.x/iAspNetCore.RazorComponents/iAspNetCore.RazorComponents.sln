@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32328.378
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iAspNetCore.RazorComponents", "src\6.x\iAspNetCore.RazorComponents\iAspNetCore.RazorComponents\iAspNetCore.RazorComponents.csproj", "{42D6EBC3-6289-4A85-819F-A4499F84A89C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorServer", "src\6.x\BlazorServer\BlazorServer.csproj", "{A23124C4-BB82-4A7F-91E6-0B6C1267CA9F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iAspNetCore.RazorComponents", "iAspNetCore.RazorComponents\iAspNetCore.RazorComponents.csproj", "{42D6EBC3-6289-4A85-819F-A4499F84A89C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +15,6 @@ Global
 		{42D6EBC3-6289-4A85-819F-A4499F84A89C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42D6EBC3-6289-4A85-819F-A4499F84A89C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{42D6EBC3-6289-4A85-819F-A4499F84A89C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A23124C4-BB82-4A7F-91E6-0B6C1267CA9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A23124C4-BB82-4A7F-91E6-0B6C1267CA9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A23124C4-BB82-4A7F-91E6-0B6C1267CA9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A23124C4-BB82-4A7F-91E6-0B6C1267CA9F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
