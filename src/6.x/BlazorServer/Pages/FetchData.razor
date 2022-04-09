@@ -1,5 +1,7 @@
 ﻿@page "/fetchdata"
 
+@using iAspNetCore.RazorComponents
+
 <PageTitle>Weather forecast</PageTitle>
 
 @using BlazorServer.Data
@@ -37,6 +39,23 @@ else
         </tbody>
     </table>
 }
+
+
+<BlazorGrid Items="@forecasts" PageSize="4"> 
+    <GridHeader> 
+        <th>Date</th> 
+        <th>TemperatureC</th> 
+        <th>TemperatureF</th> 
+        <th>Summary</th> 
+    </GridHeader> 
+    <GridRow> 
+        <td>@context.Date.ToShortDateString()</td> 
+        <td>@context.TemperatureC</td> 
+        <td>@context.TemperatureF</td> 
+        <td>@context.Summary</td> 
+    </GridRow> 
+</BlazorGrid>
+
 
 @code {
     private WeatherForecast[]? forecasts;
